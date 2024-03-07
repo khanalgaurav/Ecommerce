@@ -4,10 +4,10 @@ import ItemCard from '../ItemCard/ItemCard'
 function Popular() {
   return (
     <>
-        <div className='h-screen md:flex justify-center flex-col'>
+        <div className='md:h-screen h-fit md:flex justify-center flex-col'>
             <div className='w-screen text-center text-3xl'>
                 <p>POPULAR IN Ha WEMEN</p>
-                <div className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-black h-1 rounded-3xl'></div>
+                <div className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-black h-1 rounded-3xl z-[-99]'></div>
             </div>
             
             <div className='md:flex md:flex-row flex flex-col gap-5 justify-center items-center mt-10'>

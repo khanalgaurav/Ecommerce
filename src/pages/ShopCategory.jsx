@@ -2,7 +2,10 @@ import React from 'react'
 
 function ShopCategory() {
   return (
-    <div>ShopCategory</div>
+    <div>
+      <h1>yo yo yo</h1>
+      <div className='h-screen bg-red-600'></div>
+    </div>
   )
 }
 
