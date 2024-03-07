@@ -14,7 +14,7 @@ function Navbar() {
         <div>
                 
                 <div className='flex items-center gap-60'>
-                    <Link onClick={()=>{setShow(!show)}} to='/'>
+                    <Link onClick={()=>{setShow(false)}} to='/'>
                     <div className='flex items-center'>
                         <img src={logo} alt="logo" />
                         <p className='md:text-3xl text-2xl font-bold'>TheRaj</p>
@@ -25,7 +25,7 @@ function Navbar() {
                 </div>
             
         </div>
-        {/* top-[82px] */}
+        
         <div>
             <ul className={`menu md:flex md:relative fixed md:top-0 left-0 w-full top-[82px] bg-white md:gap-10 ${show?'block':'hidden'}`}>
                 <NavLink onClick={()=>{setShow(!show)}} className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to= '/'><li  className='g text-center border md:border-0 md:p-0 p-3 text-lg '>Shop</li></NavLink>
