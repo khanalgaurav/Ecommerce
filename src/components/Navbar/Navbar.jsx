@@ -13,15 +13,15 @@ function Navbar() {
 
         <div>
                 
-                <div className='flex items-center gap-60'>
+                <div className='flex items-center gap-[200px]'>
                     <Link onClick={()=>{setShow(false)}} to='/'>
                     <div className='flex items-center'>
                         <img src={logo} alt="logo" />
                         <p className='md:text-3xl text-2xl font-bold'>TheRaj</p>
                     </div>
                     </Link>
-                    <TfiMenuAlt onClick={()=>{setShow(!show)}} className={`text-4xl md:hidden ${show?'hidden':'block'}`} />
-                    <GiSkullCrossedBones onClick={()=>{setShow(!show)}} className={`text-4xl md:hidden ${show?'block':'hidden'}`}/>
+                    <TfiMenuAlt onClick={()=>{setShow(!show)}} className={`text-5xl md:hidden ${show?'hidden':'block'}`} />
+                    <GiSkullCrossedBones onClick={()=>{setShow(!show)}} className={`text-5xl md:hidden ${show?'block':'hidden'}`}/>
                 </div>
             
         </div>
