@@ -28,12 +28,7 @@ function LoginAndSignup() {
                 </div>
             </div>
 
-            {/* -----------------------small theraj logo--------------------------- */}
-
-            <div className='flex md:hidden items-center justify-center fixed top-[25%] left-[50%] translate-x-[-50%] border rounded-2xl'>
-                        <img src={logo} alt="logo" />
-                        <p className='text-3xl font-bold flex flex-col'>TheRaj<span className='text-base'>login/signup</span></p>      
-            </div>
+            
 
             {/* ----------------------------Actual login form---------------------------- */}
             <div className={`h-fit p-7 bg-[#F3DBC3] rounded-2xl shadow-2xl ${signin?'block':'hidden'}`}>

@@ -12,7 +12,8 @@ function Popular() {
             
             <div className='md:flex md:flex-row flex flex-col gap-5 justify-center items-center mt-10'>
                 {data_product.map((item,i)=>{
-                    return (<ItemCard key={i} id={item.id} image={item.image} name={item.name} new_price={item.new_price} old_price={item.old_price}/>);
+                    const {id,name,image,new_price,old_price}=item;
+                    return (<ItemCard key={i} id={id} image={image} name={name} new_price={new_price} old_price={old_price}/>);
                 })}
             </div>
         </div>
