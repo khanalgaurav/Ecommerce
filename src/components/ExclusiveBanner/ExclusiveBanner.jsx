@@ -2,7 +2,7 @@ import React from 'react'
 import exclusiveImage from '../assets/exclusive_image.png'
 function ExclusiveBanner() {
   return (
-    <div className='mt-20 md:flex h-fit md:w-fit w-screen rounded-xl bg-gradient-to-l from-white to-pink-200 md:mx-32 mb-10'>
+    <div className='mt-20 md:flex h-fit md:w-fit w-screen rounded-xl bg-gradient-to-l from-white to-red-200 md:mx-32 mb-10'>
         <div className='md:flex md:flex-row flex flex-col  px-10 pt-10 pb-5'>
             <div className='h-[50vh] overflow-hidden border-b border-red-600'>
               <img src={exclusiveImage} alt="Exclusive Banner Image"/>

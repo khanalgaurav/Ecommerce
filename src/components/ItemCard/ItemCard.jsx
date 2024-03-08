@@ -4,7 +4,7 @@ import p2 from '../assets/product_2.png'
 function ItemCard({image,id,new_price,old_price,name}) {
   return (
     <div>
-        <div className='border rounded-xl overflow-hidden border-slate-600 w-[300px] pb-1'>
+        <div className='rounded-xl overflow-hidden shadow-lg w-[300px] pb-1'>
             <img className='' src={image} alt={id} />
             <p className='text-base mt-2 pl-3'>{name}</p>
             <div className='flex gap-5 align-middle items-center mt-2 p-3 '>

@@ -12,7 +12,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className='p-14 h-screen md:block md:flex hidden'>
+      <div className='p-14 h-screen lg:flex hidden'>
         <img src={hero} alt="hero image"/>
       </div>
     </div>
