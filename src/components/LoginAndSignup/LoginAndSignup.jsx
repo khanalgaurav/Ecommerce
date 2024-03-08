@@ -40,11 +40,11 @@ function LoginAndSignup() {
                 <form action="" className='text-lg'>
                     <div >
                         <label htmlFor="email">Email address</label><br/>
-                        <input className=' outline-none border-b bg-[#F3DBC3] border-black w-72' type="email" placeholder='Enter your email' />
+                        <input className=' outline-none border-b bg-[#F3DBC3] border-black w-[300px]' type="email" placeholder='Enter your email' />
                     </div>
                     <div className='mt-5'>
                         <label htmlFor="password">Password</label><br/>
-                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-72' type={pass} placeholder='Enter your Password' />
+                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-[300px]' type={pass} placeholder='Enter your Password' />
                         <BiSolidShow onClick={()=>{setPass("password");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'block':'hidden'}`} />
                         <BiSolidHide onClick={()=>{setPass("text");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'hidden':'block'}`} />
                     </div>
@@ -73,17 +73,17 @@ function LoginAndSignup() {
                 <form action="" className='text-lg'>
                     <div >
                         <label htmlFor="email">Email address</label><br/>
-                        <input className=' outline-none border-b bg-[#F3DBC3] border-black w-72' type="email" placeholder='Enter your email' />
+                        <input className=' outline-none border-b bg-[#F3DBC3] border-black w-[300px]' type="email" placeholder='Enter your email' />
                     </div>
                     <div className='mt-5'>
                         <label htmlFor="password">Create Password</label><br/>
-                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-72' type={pass} placeholder='Create your Password' />
+                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-[300px]' type={pass} placeholder='Create your Password' />
                         <BiSolidShow onClick={()=>{setPass("password");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'block':'hidden'}`} />
                         <BiSolidHide onClick={()=>{setPass("text");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'hidden':'block'}`} />
                     </div>
                     <div className='mt-5'>
                         <label htmlFor="password">Confirm Password</label><br/>
-                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-72' type={pass} placeholder='Confirm your Password' />
+                        <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-[300px]' type={pass} placeholder='Confirm your Password' />
                         <BiSolidShow onClick={()=>{setPass("password");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'block':'hidden'}`} />
                         <BiSolidHide onClick={()=>{setPass("text");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'hidden':'block'}`} />
                     </div>
