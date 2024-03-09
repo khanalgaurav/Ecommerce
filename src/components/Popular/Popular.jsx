@@ -7,7 +7,7 @@ function Popular() {
         <div className='md:h-screen h-fit md:flex justify-center flex-col'>
             <div className='w-screen text-center text-3xl'>
                 <p>POPULAR IN Ha WEMEN</p>
-                <hr className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-red-600 h-1 rounded-3xl z-[-1]'></hr>
+                <hr className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-red-600 h-1 rounded-3xl'></hr>
             </div>
             
             <div className='md:flex md:flex-row flex flex-wrap flex-col gap-10 justify-center items-center mt-10'>

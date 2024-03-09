@@ -6,7 +6,7 @@ function NewCollection() {
     <div className=' mt-20 pt-10'>
         <div className='w-screen text-center text-3xl'>
             <p>New Collections</p>
-            <hr className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-red-600 h-1 rounded-3xl z-[-1]'></hr>
+            <hr className='w-[200px] mt-3 relative left-[50%] translate-x-[-50%] bg-red-600 h-1 rounded-3xl'></hr>
         </div>
         <div className='md:flex md:flex-row md:flex-wrap flex flex-col gap-10 justify-center items-center mt-10'>
             {new_collection.map((item,i)=>{

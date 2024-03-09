@@ -78,7 +78,7 @@ function LoginAndSignup() {
                     <div className='mt-5'>
                         <label htmlFor="password">Create Password</label><br/>
                         <input className='outline-none absolute border-b bg-[#F3DBC3] border-black w-[300px]' type={pass} placeholder='Create your Password' />
-                        <BiSolidShow onClick={()=>{setPass("password");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'block':'hidden'}`} />
+                        <BiSolidShow onClick={()=>{setPass("password");setShowpass(!showpass)}} className={` text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'block':'hidden'}`} />
                         <BiSolidHide onClick={()=>{setPass("text");setShowpass(!showpass)}} className={`text-2xl relative left-[100%] translate-x-[-100%] ${showpass?'hidden':'block'}`} />
                     </div>
                     <div className='mt-5'>

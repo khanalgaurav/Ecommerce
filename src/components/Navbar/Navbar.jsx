@@ -8,8 +8,10 @@ import { GiSkullCrossedBones } from "react-icons/gi";
 
 function Navbar() {
     const [show,setShow] = useState(false)
+    const [cartDisplay,setCartDisplay] = useState(true)
+
   return (
-    <div className='flex md:justify-around items-center border p-2 shadow-sm md:relative sticky top-0 bg-white'>
+    <div className='flex md:justify-around items-center border p-2 shadow-sm md:relative sticky top-0 bg-white z-[1]'>
 
         <div>
                 
@@ -34,17 +36,16 @@ function Navbar() {
                 <NavLink onClick={()=>{setShow(!show)}} className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to ='/kids'><li  className='g border md:border-0 text-center md:p-0 p-3 text-lg'>Kids</li></NavLink>
                 <div className='flex justify-around py-5 border-b md:hidden'>
                     <NavLink onClick={()=>{setShow(!show)}} className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to='/login'><button className='border border-[#c2c2c2] py-2 px-9 rounded-3xl hover:bg-slate-500 hover:text-white'>Login</button></NavLink>
-                    <NavLink onClick={()=>{setShow(!show)}} className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to='/cart'><img src={cartIcon} alt="Cart Icon" /></NavLink>
+                    <NavLink onClick={()=>{setShow(!show)}} className={`relative p-1`} to='/cart'><div className={`w-[22px] h-[22px] bg-red-500 flex items-center justify-center absolute right-0 top-0 rounded-[50%]`}>0</div><img src={cartIcon} alt="Cart Icon" /></NavLink>
                 </div>
             </ul>
         </div>
 
         <div className='md:flex gap-16 hidden '>
             <NavLink className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to='/login'><button className='border border-[#c2c2c2] py-2 px-9 rounded-3xl hover:bg-slate-500 hover:text-white'>Login</button></NavLink>
-            <NavLink className={({isActive})=>`${isActive?'text-red-500':'text-black'}`} to='/cart'><img src={cartIcon} alt="Cart Icon" /></NavLink>
-            <div className='w-[22px] h-[22px] bg-red-500 flex items-center justify-center absolute right-[145px] top-[15px] rounded-[50%]'>0</div>
+            <NavLink className={`relative p-1`} to='/cart'><div className='w-[22px] h-[22px] bg-red-500 flex items-center justify-center absolute right-0 top-0 rounded-[50%]'>0</div><img src={cartIcon} alt="Cart Icon" /></NavLink>
+            
         </div>
-
     </div>
   )
 }
