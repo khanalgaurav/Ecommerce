@@ -3,7 +3,7 @@ import arrow from '../assets/arrow.png'
 import hero from '../assets/hero_image.png'
 function Hero() {
   return (
-    <div className='h-screen  bg-gradient-to-t from-white to-red-500 sm:flex'>
+    <div className='h-screen  bg-gradient-to-t from-white to-red-400 sm:flex'>
       <div className='flex flex-col md:w-1/2'>
         <div className='md:ml-36 h-screen md:pt-[20vh] pt-[35vh] md:text-left text-center'>
           <p className='text-2xl'>New Items Are Here</p>
