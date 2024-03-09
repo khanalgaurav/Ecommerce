@@ -17,7 +17,7 @@ function Footer() {
             </div>
         </Link>
         <div>
-          <ul className='flex md:gap-10 gap-5 my-5'>
+          <ul className='flex md:gap-10 gap-3 my-5'>
             <li>Company</li>
             <li>Product</li>
             <li>Office</li>
