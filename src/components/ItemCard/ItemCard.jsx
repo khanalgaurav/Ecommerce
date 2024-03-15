@@ -7,7 +7,7 @@ function ItemCard({image,id,new_price,old_price,name}) {
     <div>
         <div className='rounded-xl overflow-hidden shadow-lg w-[300px] pb-1'>
             <Link to={`/product/${id}`}><img className='' src={image} alt={id} /></Link>
-            <Link to={`/product/${id}`}><p className='text-base mt-2 pl-3'>{name}</p></Link>
+            <Link to={`/product/${id}`}><p className='text-base mt-2 pl-3'>{name.slice(0,20)}...</p></Link>
             <div className='flex gap-5 align-middle items-center mt-2 p-3 '>
                 <p className='text-lg font-bold'>${new_price}</p>
                 <p className='text-lg text-gray-500 line-through'>${old_price}</p>

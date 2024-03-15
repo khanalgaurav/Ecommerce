@@ -12,7 +12,7 @@ function Product() {
   return (
     <div>
       <Breadcrum product={product}/>
-      <ProductDisplay image={product.image}/>
+      <ProductDisplay image={product.image} name={product.name} oldprice={product.old_price} newprice={product.new_price}/>
     </div>
   )
 }
