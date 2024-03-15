@@ -7,7 +7,10 @@ import Product from './pages/Product'
 import LoginSignup from './pages/LoginSignup'
 import Cart from './pages/Cart'
 import Footer from './components/Footer/Footer'
+import IsLoggedIn from './components/IsLoggedIn/IsLoggedIn'
+// userloggedin status
 
+const user=false; 
 function App() {
  
   return (
@@ -22,7 +25,19 @@ function App() {
           <Route path='/product' element={<Product/>}>
             <Route path=':productId' element={<Product/>}/>
           </Route>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route
+            path="/cart"
+            element={
+              <IsLoggedIn user={!user} redirect="/login">
+                <Cart />
+              </IsLoggedIn>
+            }
+          />
+          
+          {/* <Route element={<IsLoggedIn user={user}/>}>
+            <Route path='/cart' element={<Cart/>}/>
+          </Route> */}
+
           <Route path='/login' element={<LoginSignup/>}/>
         </Routes>
         <Footer/>
