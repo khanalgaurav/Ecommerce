@@ -4,8 +4,8 @@ import { FaStarHalfStroke } from "react-icons/fa6";
 
 function ProductDisplay({image,name,oldprice,newprice}) {
   return (
-    <div className='md:flex md:mx-32'>
-        <div className="flex gap-3 mx-6">
+    <div className='md:flex gap-5 md:mx-32 mx-6'>
+        <div className="flex gap-3">
             <div className='md:w-[100px] w-[80px] gap-3 flex flex-col'>
                 <img src={image} alt="Product preview image" />
                 <img src={image} alt="Product preview image" />
@@ -17,7 +17,7 @@ function ProductDisplay({image,name,oldprice,newprice}) {
             </div>
         </div>
         <div className="">
-          <h1 className='text-4xl font-bold'>{name}</h1>
+          <h1 className='md:text-4xl text-2xl font-bold mt-4'>{name}</h1>
           <div className='flex text-red-500 items-center mt-5'>
             <FaStar/>
             <FaStar/>
